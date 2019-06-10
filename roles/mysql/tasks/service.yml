@@ -1,0 +1,7 @@
+---
+- name:  Start Mysql Service
+  service: name=mysql state=started enabled=true
+
+- name: Restart Apache
+  service: name=apache2 state=restarted
+

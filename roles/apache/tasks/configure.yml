@@ -1,0 +1,10 @@
+---
+# Configuring apache2
+- name: apache2 configuration file
+  copy: src=apache2.conf dest=/etc/apache2/apache2.conf
+  #notify: restart apache service
+
+- name: apache2 sites file
+  copy: src=000-default.conf dest=/etc/apache2/sites-available/000-default.conf
+  #notify: restart apache service
+

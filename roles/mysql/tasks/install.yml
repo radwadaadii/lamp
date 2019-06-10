@@ -1,0 +1,10 @@
+---
+- name:  Install Mysql server
+  apt: name=mysql-server state=present
+
+- name: Install python Mysql package #required for mysql_db tasks
+  apt: name=python-mysqldb state=present
+
+- name: Install MySQL extension for PHP
+  apt: name=php7.0-mysql state=present
+

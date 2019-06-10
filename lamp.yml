@@ -1,0 +1,9 @@
+---
+- name: lamp_debian9
+  hosts: all
+  #become: true
+  #become: sudo
+  roles:
+   - role: apache
+   - role: php
+   - role: mysql
