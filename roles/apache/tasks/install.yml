@@ -5,6 +5,4 @@
 - name: install PHP module for Apache
   apt: name=libapache2-mod-php7.0 state=present
 
-- name: install Hello World PHP script
-  copy: src=index.php dest=/var/www/index.php mode=0664
 
